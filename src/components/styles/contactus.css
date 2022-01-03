@@ -130,7 +130,7 @@
 	
 }
 
-@media screen and (max-width: 400px){
+@media screen and (max-width: 500px){
 	.user-input{
 		width: 55%;
 		font-size: .7em;

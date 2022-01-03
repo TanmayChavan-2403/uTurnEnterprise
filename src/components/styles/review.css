@@ -190,13 +190,13 @@ span {
 }
 
 
-@media screen and (max-width: 400px){
+@media screen and (max-width: 550px){
 	#review-left-container{
 		display: none;
 	}
 
 	#review-right-container{
-		width: 95%;
+		width: 80%;
 	}
 
 	#reviewer-name{

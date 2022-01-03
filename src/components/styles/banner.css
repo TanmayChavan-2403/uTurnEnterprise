@@ -198,6 +198,18 @@
 
 }
 
+@media screen and (max-width: 500px){
+	#menu-items{
+		width: 70px;
+		height: 70vh;
+	}
+
+	.menu-icon{
+		width: 40px;
+		height: 40px;
+	}
+}
+
 
 
 
