@@ -96,11 +96,12 @@
 #menu-bar{
 	top: 0px;
 	width: 6%;
+	z-index: 5;
 	right: 0px;
 	color: white;
 	height: 100%;
-	font-weight: bolder;
 	position: fixed;
+	font-weight: bolder;
 }
 
 #menu-bar:hover #menu-items{
@@ -234,7 +235,6 @@
 
 	#menu-bar{
 		width: 70px;
-		height: 70vh;
 	}
 
 	#menu-items{
