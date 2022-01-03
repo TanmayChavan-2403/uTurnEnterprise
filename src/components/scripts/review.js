@@ -33,8 +33,7 @@ function Review(props){
 			container.style.height = `${screenWidth / 2}px`;
 
 		}
-
-		
+	
 	}
 
 	useEffect(() => {

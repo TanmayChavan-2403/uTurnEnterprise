@@ -90,7 +90,6 @@ body{
 	max-width: 225px;
 	min-height: 282px;
 	max-height: 282px;
-
 	display: flex;
 	flex-wrap: wrap;
 	cursor: pointer;
@@ -208,7 +207,12 @@ body{
 	}
 }
 
-
+@media screen and (max-width:  900px){
+	.service-card-text{
+		opacity: 1;
+		transform: translateY(-30%);
+	}
+}
 
 
 

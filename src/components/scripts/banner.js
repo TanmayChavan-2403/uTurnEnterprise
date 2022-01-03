@@ -9,7 +9,7 @@ function Banner(){
 		let menubar = document.getElementById('menu-bar');
 
 		// Calculating the width required to the menubar which is 20% of client screen width
-		let menubarWidth = (window.innerWidth * 20) / 100;
+		let menubarWidth = (window.innerWidth * 6) / 100;
 
 		// Setting the calculated width to the menubar container 
 		menubar.style.width = `${menubarWidth}px`;
@@ -37,6 +37,11 @@ function Banner(){
 				</div>
 				<h1  id='heading'> U-Turn <br />Enterprise </h1>
 				<div id='menu-bar'>
+					<div id='dummy-bar'>
+						<div className='bar'></div>
+						<div className='bar'></div>
+						<div className='bar'></div>
+					</div>
 					<section id='menu-items'>
 						<div className='menu-icon'>
 							<img src='/Icons/home.svg' className='ico' alt='menubar-image'></img>

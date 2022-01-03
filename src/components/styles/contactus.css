@@ -13,6 +13,15 @@
 	justify-content: center;
 }
 
+#contact-us-heading{
+	width: 100%;
+	color: white;
+	display: flex;
+	font-size: 1.5em;
+	padding-left: 50px;
+	font-family: InsaniBC;
+}
+
 #contact-left-container{
 	width: 30%;
 	height: 100%;
@@ -102,9 +111,15 @@
 
 @media screen and (max-width: 600px){
 	#contact-us{
-		margin: 20px 0px;
+		margin: 35px 0px;
 	}
 
+	#contact-us-heading{
+		padding: 0px;
+		color: #1985e3;
+		font-size: .5em;
+		justify-content: center;
+	}
 	
 	#contact-left-container{
 		width: 100%;

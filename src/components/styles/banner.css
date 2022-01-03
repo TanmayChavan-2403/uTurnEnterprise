@@ -95,7 +95,7 @@
 
 #menu-bar{
 	top: 0px;
-	width: 20%;
+	width: 6%;
 	right: 0px;
 	color: white;
 	height: 100%;
@@ -107,8 +107,29 @@
 	right: 0px;
 }
 
+#dummy-bar{
+	top: 50%;
+	right: 0px;
+	width: 80%;
+	height: 60px;
+	display: flex;
+	flex-wrap: wrap;
+	position: absolute;
+	align-items: center;
+	align-content: center;
+	justify-content: center;
+	background-color: #222222;
+	transform: translateY(-50%);
+}
+
+.bar{
+	width: 70%;
+	margin: 3px;
+	border: 3px solid white;
+}
+
 #menu-items{
-	width: 30%;
+	width: 100%;
 	bottom: 7%;
 	right: -80px;
 	height: 85vh;
@@ -199,6 +220,19 @@
 }
 
 @media screen and (max-width: 500px){
+
+	#dummy-bar{
+		width: 70%;
+		height: 50px;
+	}
+
+	.bar{
+		width: 60%;
+		margin: 3px;
+		border: 2px solid white;
+	}
+
+
 	#menu-items{
 		width: 70px;
 		height: 70vh;

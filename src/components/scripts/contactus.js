@@ -23,6 +23,9 @@ export default function ContactUS(props) {
 	return(
 		<>
 			<div id='contact-us'> 
+				<div id='contact-us-heading'>
+					<h1> Write to us: </h1>
+				</div>
 				<div id='contact-left-container'>
 					<input className='user-input' placeholder='Your Name'/>
 					<input className='user-input' placeholder='Your Email'/>
@@ -30,7 +33,7 @@ export default function ContactUS(props) {
 					<input className='user-input' placeholder='Your Message'/>
 				</div>
 				<div id='contact-right-container'>
-					<img src='/images/contactus.png'></img>
+					<img src="/images/contactus.png"></img>
 				</div>
 			</div>
 		< />
