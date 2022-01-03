@@ -5,15 +5,17 @@ import '../../fonts/elastic stretch.ttf';
 function Banner(){
 
 	function updateMenuBarDimensions(){
-		// Fetching the menubar container with the help of its id
-		let menubar = document.getElementById('menu-bar');
+		if (window.innerWidth > 600){
+			// Fetching the menubar container with the help of its id
+			let menubar = document.getElementById('menu-bar');
 
-		// Calculating the width required to the menubar which is 20% of client screen width
-		let menubarWidth = (window.innerWidth * 6) / 100;
+			// Calculating the width required to the menubar which is 20% of client screen width
+			let menubarWidth = (window.innerWidth * 6) / 100;
 
-		// Setting the calculated width to the menubar container 
-		menubar.style.width = `${menubarWidth}px`;
-		// menubar.innerText = menubarWidth + 'px';
+			// Setting the calculated width to the menubar container 
+			menubar.style.width = `${menubarWidth}px`;
+			// menubar.innerText = menubarWidth + 'px';	
+		}
 	}
 
 	return(
