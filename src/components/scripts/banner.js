@@ -1,6 +1,8 @@
-import React from 'react';
+import React, {useEffect} from 'react';
 import '../styles/banner.css'
 import '../../fonts/elastic stretch.ttf';
+
+import { smoothScroller, fadeScroller } from '../../packages/smoothScroller.js';
 
 function Banner(){
 
@@ -17,6 +19,11 @@ function Banner(){
 			// menubar.innerText = menubarWidth + 'px';	
 		}
 	}
+
+	useEffect(() => {
+		// onScroll Scubription
+		// window.addEventListener('scroll', fadeScroller)
+	})
 
 	return(
 		<>
@@ -45,22 +52,22 @@ function Banner(){
 						<div className='bar'></div>
 					</div>
 					<section id='menu-items'>
-						<div className='menu-icon'>
+						<div className='menu-icon' onClick={() => smoothScroller('banner')}>
 							<img src='/Icons/home.svg' className='ico' alt='menubar-image'></img>
 						</div>
-						<div className='menu-icon'>
+						<div className='menu-icon' onClick={() => smoothScroller('about-us')}>
 							<img src='/Icons/aboutUS.svg' className='ico' alt='menubar-image'></img>
 						</div>
-						<div className='menu-icon'>
+						<div className='menu-icon' onClick={() => smoothScroller('services')}>
 							<img src='/Icons/review.svg' className='ico' alt='menubar-image'></img>
 						</div>
-						<div className='menu-icon'>
+						<div className='menu-icon' onClick={() => smoothScroller('review')}>
 							<img src='/Icons/services.svg' className='ico' alt='menubar-image'></img>
 						</div>
-						<div className='menu-icon'>
+						<div className='menu-icon' onClick={() => smoothScroller('contact-us')}>
 							<img src='/Icons/contactUS.svg' className='ico' alt='menubar-image'></img>
 						</div>
-						<div className='menu-icon'>
+						<div className='menu-icon' onClick={() => smoothScroller('footer')}>
 							<img src='/Icons/findUS.svg' className='ico' alt='menubar-image'></img>
 						</div>
 					</section> 
