@@ -49,6 +49,7 @@
 	-moz-box-shadow: 2px -1px 27px 0px rgba(13,13,13,0.75);
 }
 
+
 #review-left-container{
 	width: 22%;
 	height: 85%;
@@ -57,6 +58,15 @@
 	position: relative;
 	align-items: center;
 	justify-content: center;
+}
+
+#review-right-container{
+	width: 60%;
+	height: 90%;
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	align-content: flex-end;
 }
 
 
@@ -96,14 +106,7 @@
 }
 
 
-#review-right-container{
-	width: 60%;
-	height: 90%;
-	display: flex;
-	flex-wrap: wrap;
-	align-items: center;
-	align-content: flex-end;
-}
+
 
 #reviewer-name{
 	width: 40%;
@@ -135,12 +138,29 @@
 	box-shadow: 2px -1px 27px 0px rgba(13,13,13,0.75) inset;
 } 
 
+#reviewer-content::-webkit-scrollbar {
+  display: none;
+}
+
+.#reviewer-content{
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+}
 
 
 span {
   content: "\201C";
 } 
 
+
+.arrowContainer{
+	width: 9%;
+	height: 100%;
+	display: flex;
+	padding: 5px;
+	cursor: pointer;
+	align-items: center;
+}
 
 
 
@@ -191,6 +211,10 @@ span {
 
 
 @media screen and (max-width: 550px){
+	#review-slider-container{
+		width: 100%;
+	}
+
 	#review-left-container{
 		display: none;
 	}
@@ -208,3 +232,43 @@ span {
 		height: fit-content;
 	}
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*<div id='review-left-container' onLoad={updateDimensions}>
+
+							<div id='avatar-latter-container'></div>
+							<div id='avatar-former-container'>
+								<div id='reviewer-avatar'>
+									<img src='/images/profilepic.jpg'></img>
+								</div>
+							</div>
+
+						</div>
+
+						<div id='review-right-container'>
+							<div id='reviewer-name'>
+								<h2> Tanmay Chavan </h2>
+							</div>
+							<div id='reviewer-content'>
+								<blockquote>
+									<span>&#8220;</span> 
+										Best service experienced ever. Everyone is polite and the quality they provide
+										is at an extreme leve. I bought my first PC from here and its been 5 years, I 
+										havent envountered any major issues yet. And whenever something happens, they 
+										used to resolve it within a day or two.
+										<span>&#8221;</span> 
+								</blockquote>
+							</div>
+						</div>
+*/

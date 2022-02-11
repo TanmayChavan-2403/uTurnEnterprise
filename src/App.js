@@ -1,20 +1,22 @@
 import './App.css';
-import Banner from './components/scripts/banner.js';
-import AboutUS from './components/scripts/aboutus.js';
-import Services from './components/scripts/services.js';
-import Review from './components/scripts/review.js'
-import ContactUS from './components/scripts/contactus.js';
-import Footer from './components/scripts/footer.js'
+import Home from './home.js';
+import Shopping from './components/scripts/shopping.js';
+
+import {BrowserRouter as Router, Route, Switch} from 'react-router-dom';
 
 function App(){
     return (
         <>
-            <Banner />
-            <AboutUS />
-            <Services />
-            <Review />
-            <ContactUS />
-            <Footer />
+            <Router>
+                <Switch>
+                    <Route exact path="/">
+                        <Home />
+                    </Route>
+                    <Route path="/shopping">
+                        <Shopping />
+                    </Route>
+                </Switch>
+            </Router>
         </>
     )
 }

@@ -81,8 +81,13 @@ body{
 	scrollbar-width: none;  /* Firefox */
 }
 
-#right-container::webkit-scrollbar{
-	display: none;
+#right-container::-webkit-scrollbar {
+  display: none;
+}
+
+#right-container {
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
 }
 
 .service-card{

@@ -2,7 +2,8 @@
 # hackytechsgithubsecuritypassphrase4#@106810
 .firebaserc
 firebase.json
-node_modules
+node_modules/
 .firebase
-build
+firebase.json
+build/
 package-lock.json

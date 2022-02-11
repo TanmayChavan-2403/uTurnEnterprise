@@ -22,8 +22,8 @@
 	overflow: hidden;
 	justify-content: center;
 	background-color: #1a1a1a;
-
 }
+
 
 #about-us-heading{
 	width: 85%;
@@ -46,6 +46,15 @@
 	align-items: center;
 	scrollbar-width: none;
 	justify-content: space-around;
+}
+
+#about-us-content::-webkit-scrollbar {
+  display: none;
+}
+
+.#about-us-content{
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
 }
 
 #about-us-para{
@@ -116,7 +125,51 @@
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /* Media Queries */
+
 @media screen and (max-width: 940px){
 	#about-us-content{
 		row-gap: 70px;

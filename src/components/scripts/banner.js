@@ -1,6 +1,7 @@
 import React, {useEffect} from 'react';
 import '../styles/banner.css'
 import '../../fonts/elastic stretch.ttf';
+import {Link} from 'react-router-dom';
 
 import { smoothScroller, fadeScroller } from '../../packages/smoothScroller.js';
 
@@ -69,6 +70,11 @@ function Banner(){
 						</div>
 						<div className='menu-icon' onClick={() => smoothScroller('footer')}>
 							<img src='/Icons/findUS.svg' className='ico' alt='menubar-image'></img>
+						</div>
+						<div className='menu-icon'>
+						<Link to="/shopping">
+							<img src='/Icons/shopping.png' className='ico' alt='menubar-image'></img>
+						</Link>
 						</div>
 					</section> 
 				</div>
