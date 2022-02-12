@@ -1,8 +1,38 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import '../styles/shopping.css'
 
 
 function Shopping(){
+
+	let [searchBarState, changeState] = useState('closed');
+
+	function toggleSearchBar(e){
+		let searchBar = document.getElementById('search-bar');
+		let inputBar = searchBar.children[0];
+
+		if (searchBarState == 'closed'){
+			searchBar.style.width = '40%';
+			inputBar.style.padding = '10px';
+			changeState('open');
+		} else {
+			searchBar.style.width = '0%';
+			inputBar.style.padding = '0px';
+			changeState('closed');
+		}
+	}
+
+	useEffect(() => {
+		window.addEventListener('scroll', (e) => {
+			if (searchBarState == 'open'){
+				let searchBar = document.getElementById('search-bar');
+				let inputBar = searchBar.children[0];
+				searchBar.style.width = '0%';
+				inputBar.style.padding = '0px';
+				changeState('closed');
+			}
+		})
+	})
+
 	return(
 		<>
 			<link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -11,6 +41,15 @@ function Shopping(){
 
 			<section id='shopping-wrapper-component-outer'>
 				<section id='shopping-wrapper-component-inner'>
+
+					<div id='shopping-navbar'>
+						<div id='search-bar'>
+							<input></input>
+						</div>
+						<div id='search-icon' onClick={toggleSearchBar}>
+							<i class="fa-solid fa-magnifying-glass"></i>
+						</div>
+					</div>
 
 					<div className='cards'>
 						<div className='card'>
@@ -55,7 +94,7 @@ function Shopping(){
 											<li> 7) Scroll Wheel Type: Regular</li>
 											<li> 8) Lighting: RGB</li>
 											<li> 9) Connectivity: USB</li>
-											<li> 10) Cable Type: Regular</li>
+											<li> 10) Cable Type: Regular</li>											
 										</ul>
 									</div>
 									<div className='product-add-to-cart'>
@@ -99,16 +138,16 @@ function Shopping(){
 									<div className='product-features'>
 										<h2>FEATURES</h2>
 										<ul>
-											<li> 1) Tracking: Optical</li>
-											<li> 2) Maximum DPI: 6200 DPI</li>
-											<li> 3) Tracking: Optical</li>
-											<li> 4) Polling Rate: 1000 Hz</li>
-											<li> 5) Acceleration: 30G</li>
+											<li> 1) CORES6: Cores</li>
+											<li> 2) SPEED3.7: GHz</li>
+											<li> 3) THREADS12: Threads</li>
+											<li> 4) MAX MEMORY SUPPORT: 64-GB</li>
+											<li> 5) CACHE12: MB</li>
 											<li> 6) Number of Buttons: Eight</li>
-											<li> 7) Scroll Wheel Type: Regular</li>
-											<li> 8) Lighting: RGB</li>
-											<li> 9) Connectivity: USB</li>
-											<li> 10) Cable Type: Regular</li>
+											<li> 7) INTEGRATED GRAPHICS: Intel UHD Graphics 630</li>
+											<li> 8) INCLUDED CPU COOLER: No</li>
+											<li> 9) TDP: 95W</li>
+											<li> 10) WARRANTY: 3 YEARS</li>
 										</ul>
 									</div>
 									<div className='product-add-to-cart'>

@@ -162,6 +162,12 @@ span {
 	align-items: center;
 }
 
+.arrowContainer img{
+	width: 100%;
+	height: 100%;
+	object-fit: contain;
+}
+
 
 
 
@@ -241,34 +247,3 @@ span {
 
 
 
-
-
-
-
-/*<div id='review-left-container' onLoad={updateDimensions}>
-
-							<div id='avatar-latter-container'></div>
-							<div id='avatar-former-container'>
-								<div id='reviewer-avatar'>
-									<img src='/images/profilepic.jpg'></img>
-								</div>
-							</div>
-
-						</div>
-
-						<div id='review-right-container'>
-							<div id='reviewer-name'>
-								<h2> Tanmay Chavan </h2>
-							</div>
-							<div id='reviewer-content'>
-								<blockquote>
-									<span>&#8220;</span> 
-										Best service experienced ever. Everyone is polite and the quality they provide
-										is at an extreme leve. I bought my first PC from here and its been 5 years, I 
-										havent envountered any major issues yet. And whenever something happens, they 
-										used to resolve it within a day or two.
-										<span>&#8221;</span> 
-								</blockquote>
-							</div>
-						</div>
-*/

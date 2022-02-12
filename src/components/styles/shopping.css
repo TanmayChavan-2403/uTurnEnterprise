@@ -42,18 +42,21 @@ font-family: 'Poppins', sans-serif;
 	width: 65%;
 	height: 80%;
 	display: flex;
-	min-width: 600px;
 	max-width: 800px;
 	max-height: 600px;
+	position: relative;
 	align-items: center;
 	justify-content: center;
+	transform-style: preserve-3d;
 }
 
 .image-section{
 	width: 40%;
 	height: 100%;
 	display: flex;
+	transition: 0.8s;
 	align-items: center;
+	justify-content: center;
 	background-color: white;
 	border-top-left-radius: 5px;
 	border-bottom-left-radius: 5px;
@@ -141,6 +144,7 @@ font-family: 'Poppins', sans-serif;
 	display: flex;
 	align-items: center;
 	background-color: white;
+	transition:  0.8s;
 	border-top-right-radius: 5px;
 	border-bottom-right-radius: 5px;
 }
@@ -244,6 +248,69 @@ font-family: 'Poppins', sans-serif;
 
 
 
+/*shopping-navbar styling starts*/
+
+#shopping-navbar{
+	width: 100%;
+	height: 10%;
+	z-index: 10;
+	display: flex;
+	position: fixed;
+	padding: 0px 10px;
+	max-height: 200px;
+	align-items: center;
+	justify-content: flex-end;
+}
+
+#search-bar{
+	width: 0%;
+	height: 100%;
+	display: flex;
+	transition: .4s;
+	align-items: center;
+	justify-content: center;
+}
+
+#search-bar input{
+	width: 80%;
+	height: 80%;
+	border: none;
+	outline: none;
+	color: #303030;
+	font-size: 2rem;
+	font-weight: 700;
+	border-radius: 5px;
+	border: 1px solid #292929;
+	font-family: 'Comfortaa', cursive;
+}
+
+#search-icon{
+	width: 55px;
+	height: 55px;
+	display: flex;
+	cursor: pointer;
+	font-size: 2rem;
+	border-radius: 50%;
+	align-items: center;
+	justify-content: center;
+	background-color: white;
+}
+
+/*shopping-navbar styling ends*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -274,12 +341,54 @@ font-family: 'Poppins', sans-serif;
 
 @media screen and (max-width: 800px){
 	.product-image-container{
-		transform: translateX(-25px);
+		transform: translateX(0px);
 	}
 	.main-image-section img{
-		transform: translateX(-35px);
+		transform: translateX(0px);
 	}
+	.product-image-container{
+		width: 75%;
+	}
+
+	.image-section{
+		width: 100%;
+		z-index: 1;
+		position: absolute;
+	}
+
+
+	.card:hover .image-section{
+		transform: rotateY(180deg);
+	}
+
+	.card:hover .description-section{
+		transform: rotateY(180deg);
+	}
+ 
+	.description-section{
+		width: 75%;
+		position: absolute;
+	}
+
+	.product-detail-section{
+		padding: 10px;
+		transform: rotateY(180deg);
+		box-shadow: none;
+		background-color: white;
+	}
+
+	.product-image-container{
+		box-shadow: none;
+	}
+
+	.main-image-section img{
+		filter: none;
+	}
+
 }
 
 @media screen and (max-width: 700px){
 }
+
+
+

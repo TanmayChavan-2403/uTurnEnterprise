@@ -17,7 +17,6 @@ function Banner(){
 
 			// Setting the calculated width to the menubar container 
 			menubar.style.width = `${menubarWidth}px`;
-			// menubar.innerText = menubarWidth + 'px';	
 		}
 	}
 
