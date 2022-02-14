@@ -21,6 +21,13 @@ function Shopping(){
 		}
 	}
 
+	function purchase(){
+		fetch('http://localhost:8080/')
+		.then(res => {return res.json()})
+		.then(data => console.log(data))
+		.catch(err => console.log(err))
+	}
+
 	useEffect(() => {
 		window.addEventListener('scroll', (e) => {
 			if (searchBarState == 'open'){
@@ -98,7 +105,7 @@ function Shopping(){
 										</ul>
 									</div>
 									<div className='product-add-to-cart'>
-										<button className='add-to-cart-button'>
+										<button className='add-to-cart-button' onClick={purchase}>
 											<p>Add To Cart</p>
 										</button>
 									</div>

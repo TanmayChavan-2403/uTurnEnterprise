@@ -71,9 +71,14 @@ function Banner(){
 							<img src='/Icons/findUS.svg' className='ico' alt='menubar-image'></img>
 						</div>
 						<div className='menu-icon'>
-						<Link to="/shopping">
-							<img src='/Icons/shopping.png' className='ico' alt='menubar-image'></img>
-						</Link>
+							<a href="/shopping">
+								<img src='/Icons/shopping.png' className='ico' alt='menubar-image'></img>
+							</a>
+						</div>
+						<div className='menu-icon'>
+							<a href="/account">
+								<img src='/Icons/avatar2.svg' className='ico' alt='menubar-image'></img>
+							</a>
 						</div>
 					</section> 
 				</div>

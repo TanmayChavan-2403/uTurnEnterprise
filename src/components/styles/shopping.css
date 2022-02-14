@@ -352,10 +352,15 @@ font-family: 'Poppins', sans-serif;
 
 	.image-section{
 		width: 100%;
-		z-index: 1;
 		position: absolute;
+		backface-visibility: hidden;
 	}
 
+	.description-section{
+		width: 75%;
+		z-index: -1;
+		position: absolute;
+	}
 
 	.card:hover .image-section{
 		transform: rotateY(180deg);
@@ -364,25 +369,11 @@ font-family: 'Poppins', sans-serif;
 	.card:hover .description-section{
 		transform: rotateY(180deg);
 	}
- 
-	.description-section{
-		width: 75%;
-		position: absolute;
-	}
+
 
 	.product-detail-section{
-		padding: 10px;
+		padding: 5px 15px;
 		transform: rotateY(180deg);
-		box-shadow: none;
-		background-color: white;
-	}
-
-	.product-image-container{
-		box-shadow: none;
-	}
-
-	.main-image-section img{
-		filter: none;
 	}
 
 }
