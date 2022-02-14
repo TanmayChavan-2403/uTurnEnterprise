@@ -21,7 +21,7 @@ class Database extends MySql{
 							select email from users where email = '${email}'`;
 
 			conn.query(sqlquery, (err, results, fields) => {
-				if (error){
+				if (err){
 					reject(['ERROR', 'Connection Lost to the database']);
 				}
 				else {
