@@ -26,7 +26,7 @@ function Account(){
 		spinner.style.display = 'block';
 
 
-		fetch('http://localhost:8080/login', {
+		fetch('https://u-turn-server.onrender.com/login', {
 			method: "POST",
 			headers: {
 				"Content-Type": "application/json"
@@ -70,12 +70,12 @@ function Account(){
 		}
 
 		// Starting loader
-		let button = document.getElementById('submit-button-section').children[0];
-		let spinner = button.children[0]
+		let button  = document.querySelectorAll('.submit-button-section')[0].children[0];
+		let spinner = button.children[0];
 		button.style.padding = '0px 25px';
-		spinner.style.display = 'block'
+		spinner.style.display = 'block';
 
-		fetch('http://localhost:8080/register', {
+		fetch('https://u-turn-server.onrender.com/register', {
             method: "POST",
             headers: {
                 "Content-Type": "application/json"
