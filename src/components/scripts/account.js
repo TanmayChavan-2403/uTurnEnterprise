@@ -26,7 +26,8 @@ function Account(){
 		spinner.style.display = 'block';
 
 
-		fetch('https://u-turn-server.onrender.com/login', {
+		// fetch('https://u-turn-server.onrender.com/login', {
+		fetch('http://localhost:8080/login',{
 			method: "POST",
 			headers: {
 				"Content-Type": "application/json"
@@ -41,11 +42,12 @@ function Account(){
 			spinner.style.display = 'none';
 
 			if (res.status == 400){
+				console.log(res);
 				displayMessage('ERROR', res.statusText);
 			} else if (res.status == 200){
 				displayMessage('SUCCESS', res.statusText);
 				document.cookie = `username=${username}`;
-				setTimeout(()=> window.location.replace("http://localhost:3000"), 2000)
+				setTimeout(()=> {window.location.href = "/"}, 2000)
 			} else {
 				displayMessage('INFO', res.statusText);
 			}
@@ -76,6 +78,7 @@ function Account(){
 		spinner.style.display = 'block';
 
 		fetch('https://u-turn-server.onrender.com/register', {
+		// fetch('http://localhost:8080/register',{
             method: "POST",
             headers: {
                 "Content-Type": "application/json"
@@ -94,7 +97,7 @@ function Account(){
 			} else if (res.status == 200){
 				displayMessage('SUCCESS', res.statusText);
 				document.cookie = `username=${username}`;
-				setTimeout(()=> window.location.replace("http://localhost:3000"), 2000)
+				setTimeout(()=> {window.location.href = "/"}, 2000)
 			} else {
 				displayMessage('INFO', res.statusText);
 			}
@@ -136,7 +139,6 @@ function Account(){
 		setTimeout(()=>{
 			messageBox.style.transform = 'translateY(-130%)';
 		}, 5000)
-
 	}
 
 	function animateOwl(){
