@@ -39,7 +39,6 @@ class Database extends MySql{
 
 	}
 
-
 	authenticateBeforeFetching(username, password){
 		return new Promise((resolve, reject) => {
 
@@ -81,6 +80,10 @@ class Database extends MySql{
 			
 
 		})
+	}
+
+	getProductDetails(){
+
 	}
 
 }

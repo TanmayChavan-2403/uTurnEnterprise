@@ -22,6 +22,17 @@ class MySql extends Encrypt{
 		
 	}
 
+	connectToProductDatabase(){
+		let connection = mysql.createConnection({
+			host: 'sql100.epizy.com',
+			user: 'epiz_30640217',
+			password: 'icnNcdrKu2AMSN',
+			database: 'epiz_30640217_products'
+
+		})
+		return connection;
+	}
+
 	createTable(){
 		let sqlquery = "select username from users where username='hackytech';";
 
