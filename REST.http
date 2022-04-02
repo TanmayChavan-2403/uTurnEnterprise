@@ -1,0 +1,17 @@
+POST http://localhost:8080/saveProduct
+Content-Type: application/json
+
+{
+    "name": "Rapoo V500 Pro",
+    "price": "2199",
+    "desc": [
+	"1) Brand: Rapoo", "2) Colour: Black"],
+    "images": [
+	"https://firebasestorage.googleapis.com/v0/b/uturn-enterprise.appspot.com/o/Rapoo%20V500%20Pro%2FRapoo%20V500%20Pro%201.png?alt=media&token=2a5af244-d6c7-48cd-9115-c15606902162",
+	"https://firebasestorage.googleapis.com/v0/b/uturn-enterprise.appspot.com/o/Rapoo%20V500%20Pro%2FRapoo%20V500%20Pro%202.png?alt=media&token=e40f44b8-ee10-455d-b234-6acc57e6e339",
+	"https://firebasestorage.googleapis.com/v0/b/uturn-enterprise.appspot.com/o/Rapoo%20V500%20Pro%2FRapoo%20V500%20Pro%203.png?alt=media&token=ad66432b-c632-48c1-bae1-fb897ac57ae1"
+]
+}
+
+###
+GET http://localhost:8080/getAllProducts

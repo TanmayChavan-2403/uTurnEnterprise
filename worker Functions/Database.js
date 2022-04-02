@@ -53,13 +53,12 @@ class Database extends MySql{
 			if (!conn){
 				reject(['ERROR', 'Connection lost to the database'])
 			}
-
 			let sqlQuery = `select username from users where username = '${username}';`;
 			console.log('In Database.js');
 			try{
 				conn.query(sqlQuery, (error, result, fields) => {
 					if (error){
-						reject(['ERROR', 'Connection Lost to the database'])
+						reject(['ERROR', error])
 					}
 					else{
 						if (Object.keys(result).length === 0){
