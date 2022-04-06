@@ -1,0 +1,417 @@
+/* font-family: 'Fredoka', sans-serif;
+font-family: 'Fredoka One', cursive;
+font-family: 'Montserrat', sans-serif; */
+
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    font-family: 'Fredoka', sans-serif;
+}
+
+#outerWrapper{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    position: fixed;
+    overflow-y: scroll;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+}
+
+#adminPannel{
+    width: 100%;
+    height: 100%;
+}
+
+#adminPannelTS{
+    width: 100%;
+    height: 11%;
+    padding: 10px 50px;
+    color: white;
+    background-color: rgb(20, 20, 20);
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+#adminPannelTS h1{
+    font-size: 2.8rem;
+    font-weight: 400;
+}
+
+#adminPannelBS{
+    width: 100%;
+    min-height: 89%;
+    display: flex;
+    padding: 20px 0px;
+    align-items: center;
+    max-height: fit-content;
+    justify-content: center;
+    background-color: #1a1a1a;
+}
+
+.ApSection{
+    width: 75%;
+    box-shadow: rgba(0, 0, 0, 0.5) 0px 7px 29px 0px;
+}
+
+.sectionHeading{
+    width: 100%;
+    height: 72px;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.sectionHeading h2{
+    margin: 0px 20px;
+    font-weight: 400;
+    height: fit-content;
+}
+
+.sectionHeading i{
+    height: 100%;
+    display: flex;
+    padding: 0px 20px;
+    font-size: 2.5rem;
+    align-items: center;
+    transition: 0.2s;
+    cursor: pointer;
+}
+
+.sectionHeading:hover i{
+    transform: scale(1.1);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.sectionContent{
+    width: 100%;
+    height: 0px;
+    display: flex;
+    flex-wrap: wrap;
+    overflow: hidden;
+    transition: 0.8s;
+    justify-content: center;
+}
+
+.adminInputTS{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.nameAndPrice{
+    width: 50%;
+    color: white;
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 1.3rem;
+    align-content: center;
+    justify-content: center;
+}
+
+.nameAndPrice label{
+    width: 40%;
+    margin: 10px 0px;
+    padding: 5px 15px;
+    
+}
+
+.nameAndPrice input{
+    width: 60%;
+    height: 45px;
+    border: none;
+    outline: none;
+    margin: 10px 0px;
+    font-size: 1.3rem;
+    padding: 0px 10px;
+    border-radius: 3px;
+}
+
+.nameAndPrice button{
+    color: white;
+    background: none;
+    margin: 15px 0px;
+    font-size: 1.2rem;
+    padding: 10px 40px;
+    transition: 0.3s;
+    cursor: pointer;
+    border: 2px solid lightskyblue;
+}
+
+.nameAndPrice button:hover{
+    color: black;
+    background: lightskyblue;
+}
+
+.imageDisplay{
+    width: 50%;
+    height: 350px;
+    display: flex;
+    color: white;
+    font-size: 1.2rem;
+    text-align: center;
+    align-items: center;
+}
+
+.imageDisplay img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.adminInputBS{
+    width: 100%;
+    display: flex;
+
+}
+
+.adminDescInput{
+    width: 50%;
+    margin: 0px 5px;
+    border: 1px solid lightskyblue;
+}
+
+.adminImagesInput{
+    width: 50%;
+    margin: 0px 5px;
+    border: 1px solid lightskyblue;
+}
+
+.adminDescInputTS{
+    width: 100%;
+    display: flex;
+    padding: 10px;
+    justify-content: space-between;
+}
+
+.adminImageInputTS{
+    width: 100%;
+    display: flex;
+    padding: 10px;
+    justify-content: space-between;
+}
+
+.adminDescInputTS input{
+    width: 80%;
+    outline: none;
+    font-size: 1.3rem;
+    padding: 5px 15px;
+    border-radius: 4px;
+}
+
+.adminDescInputTS button{
+    width: 15%;
+    border: none;
+    cursor: pointer;
+    padding: 0px 10px;
+    font-size: 1.3rem;
+    transition: 0.2s;
+    background-color: lightskyblue;
+}
+
+.adminDescInputTS button:hover{
+    box-shadow: 0px 0px 0px 4px rgba(135, 206, 250, 0.4);
+}
+
+.adminDescInputBS{
+    width: 100%;
+}
+
+.dynamicList{
+    width: 100%;
+    display: flex;
+    height: 100px;
+    flex-wrap: wrap;
+    list-style: none;
+    overflow-y: scroll;
+    justify-content: center;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+
+.dynamicList::-webkit-scrollbar{
+    display: none;
+}
+
+.dynamicList h2{
+    margin: auto;
+    color: rgb(207, 207, 207);
+    font-weight: 300;
+    font-size: 1.5rem;
+}
+
+#dynamicImageList{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    justify-content: center;
+}
+
+.adminDescInputBS ul li{
+    width: 85%;
+    color: white;
+    height: 40px;
+    margin: 5px 15px;
+    font-weight: 400;
+    list-style: none;
+    font-size: 1.3rem;
+    padding: 5px 10px;
+    transition: 0.3s;
+    cursor: pointer;
+    white-space: nowrap;
+    height: fit-content;
+    display: inline-block;
+    text-overflow: ellipsis;
+    overflow: hidden !important;
+    border: 2px solid lightskyblue;
+}
+
+.adminDescInputBS ul li:hover{
+    color: black;
+    transform: scale(1.05);
+    background-color: lightskyblue;
+}
+
+.addProduct{
+    width: 95%;
+    padding: 10px;
+    cursor: pointer;
+    margin: 15px 0px;
+    transition: 0.4s;
+    background: none;
+    border: 2px solid lightskyblue;
+}
+
+.addProduct:hover{
+    color: black;
+    background-color: lightskyblue;
+}
+
+.addProduct h3{
+    color:white;
+    font-weight: 400;
+    text-align: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Message box styling starts */
+
+.messageSection{
+	width: 30%;
+	top: 40px;
+	right: 25px;
+	display: flex;
+	height: fit-content;
+	position: absolute;
+	border-radius: 5px;
+	z-index: 10;
+	min-width: 260px;
+	transition: .5s ease-in-out;
+	transform: translateY(-200%);
+	background-color: #d92f32;
+}
+
+.messageSectionIcon{
+	width: 15%;
+	color: white;
+	display: flex;
+	font-size: 2rem;
+	align-items: center;
+	justify-content: center;
+}
+
+.messageSectionText{
+	width: 85%;
+	color: white;
+	display: flex;
+	min-height: 50px;
+	font-weight: 500;
+	font-size: 1.1rem;
+	align-items: center;
+	height: fit-content;
+	font-family: 'Poppins', sans-serif;
+}
+
+.messageSectionText p{
+	margin: 0px 5px;
+}
+
+/* Message box styling ends */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (min-height:  1200px){
+    #adminPannel{
+        max-height: 750px;
+    }
+}
+
+@media screen and (min-width: 2000px){
+    #adminPannel{
+        max-width: 1500px;
+    }
+}
