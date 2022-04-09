@@ -1,0 +1,153 @@
+*{
+	padding: 0px;
+	margin: 0px;
+	box-sizing: border-box;
+}
+
+#contact-us{
+	width: 100%;
+	height: 40vw;
+	display: flex;
+	flex-wrap: wrap;
+	margin: 70px 0px;
+	justify-content: center;
+}
+
+#contact-us-heading{
+	width: 100%;
+	color: white;
+	display: flex;
+	font-size: 1.5em;
+	padding-left: 50px;
+	font-family: InsaniBC;
+}
+
+#contact-left-container{
+	width: 30%;
+	height: 100%;
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	justify-content: center;
+}
+
+#contact-right-container{
+	width: 70%;
+	height: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+#contact-right-container img{
+	width: 100%;
+}
+
+.user-input{
+	width: 85%;
+	border: none;
+	height: 13%;
+	outline: none;
+	cursor: pointer;
+	font-size: 1.5em;
+	text-align: center;
+	border-radius: 20px;
+	font-family: InsaniBC;
+	background-color: #f6f6f6;
+}
+
+.user-input:focus{
+	outline-style: solid;
+	outline-color: skyblue;
+}
+
+.user-input:last-child{
+	height: 42%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Media Queries */
+@media screen and (max-width: 800px){
+	#contact-left-container{
+		width: 40%;
+	}
+
+	#contact-right-container{
+		width: 60%;
+	}
+	.user-input{
+		font-size: 1.1em;
+	}
+}
+
+
+@media screen and (max-width: 600px){
+	#contact-us{
+		margin: 35px 0px;
+	}
+
+	#contact-us-heading{
+		padding: 0px;
+		color: #1985e3;
+		font-size: .5em;
+		justify-content: center;
+	}
+	
+	#contact-left-container{
+		width: 100%;
+		height: 100%;
+	}
+
+	#contact-right-container{
+		width: 100%;
+		height: 40%;
+		display: none;
+	}
+
+	#first-group{
+		width: 50%;
+		height: 100%;
+	}
+
+	#contact-right-container img{
+		width: auto;
+		height: 100%;
+	}
+
+	
+}
+
+@media screen and (max-width: 500px){
+	.user-input{
+		width: 55%;
+		font-size: 1em;
+	}
+}
